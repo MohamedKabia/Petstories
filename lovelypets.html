@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lovely Pets</title>
+      <link rel="stylesheet" type="text/css" href="lovelypets..css">
+      <link rel="stylesheet" type="text/css" href="menue.css">
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>	   
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   </head>
+   <body>
+      <div id="container">
+         <nav>
+            <ul>
+               <li id="drawerH">
+                  <svg width="30" height="30">
+                     <path d="M0,5 30,5" stroke="#fff"
+                        stroke-width="5"/>
+                     <path d="M0,14 30,14" stroke="#fff"
+                        stroke-width="5"/>
+                     <path d="M0,23 30,23" stroke="#fff"
+                        stroke-width="5"/>
+                  </svg>
+               </li>
+               <li class="title"><span>Lovelly<span class="pet">Pets</span></span>
+               <li class="list"><a href="#">HOME</a>
+               <li class="list"><a href="gallery.html">GALLERY</a>
+               <li class="list"><a href="share.html">SHARE  YOUR STORY</a></li>
+            </ul>
+         </nav>
+         <!-- navigation drawer -->
+         <div id="drawer">
+            <ul>
+               <li ><a href="#">HOME</a></li>
+               <li ><a href="gallery.html">GALLERY</a></li>
+               <li><a href="share.html">SHARE  YOUR STORY</a></li>
+            </ul>
+         </div>
+         <article>
+            <div id="backdrop">
+               <h1>
+                  SHARE YOUR PET STORY OR POEMS WITH US!
+                  <P align="center">WE LOVE PETS<br>
+                     <a href="share.html">share</a>
+                  </P>
+               </h1>
+            </div>
+         </article>
+      </div>
+      <div class="section">
+         <span class="shape"></span>
+         <p>They may be big, silly and make us laugh, or tiny, quiet and snuggly. Our pets come in all shapes and sizes and have their own personalities. They love spending time with us and make us smile. They are wonderful companions, and that’s why we often think of them as our best friends. </p>
+      </div>
+      <div id="stories">
+         <!-- data is auto injected -->
+      </div>
+      <footer>
+         <div id="content">&copyLovely Pets</div>
+      </footer>
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+         apiKey: "AIzaSyBzK8S4CDCNM6rOKPGbOxMrKUuIEe652r0",
+         authDomain: "petstories-374cf.firebaseapp.com",
+         databaseURL: "https://petstories-374cf.firebaseio.com",
+         projectId: "petstories-374cf",
+         storageBucket: "petstories-374cf.appspot.com",
+         messagingSenderId: "111457987961"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script src="home.js"></script>
+   </body>
+</html>

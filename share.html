@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lovely Pets</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="share.css">
+      <link rel="stylesheet" type="text/css" href="menue.css">
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div id="container">
+      <nav>
+         <ul>
+            <li id="drawerH">
+               <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff"
+                     stroke-width="5"/>
+                  <path d="M0,14 30,14" stroke="#fff"
+                     stroke-width="5"/>
+                  <path d="M0,23 30,23" stroke="#fff"
+                     stroke-width="5"/>
+               </svg>
+            </li>
+            <li class="title"><span>Lovelly<span class="pet">Pets</span></span></li>
+            <li class="list"><a href="lovelypets.html">HOME</a></li>
+            <li class="list"><a href="gallery.html">GALLERY</a></li>
+            <li class="list"><a href="#">SHARE  YOUR STORY</a></li>
+         </ul>
+      </nav>
+      <!-- navigation drawer -->
+      <div id="drawer">
+         <ul>
+            <li ><a href="lovelypets.html">HOME</a></li>
+            <li ><a href="gallery.html">GALLERY</a></li>
+            <li><a href="#">SHARE  YOUR STORY</a></li>
+         </ul>
+      </div>
+      <content>
+         <form class="card">
+            <label>Title</label>
+            <input type=text id="title" required>
+            <label>Author</label>
+            <input type=text id="author" required>
+            <label>Story</label>
+            <textarea id="story" required></textarea>
+            <button class="btn btn-primary" id="share">Share</button>
+         </form>
+		 <div class="card" id="dialog">
+		    <div>
+			    <h3>Thanks for Sharing go home to see your story<button  class="btn btn-primary">
+				<a href="lovelypets.html">Home</a></button></h3>
+			</div>
+		 </div>
+      </content>
+      <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+           apiKey: "AIzaSyBzK8S4CDCNM6rOKPGbOxMrKUuIEe652r0",
+           authDomain: "petstories-374cf.firebaseapp.com",
+           databaseURL: "https://petstories-374cf.firebaseio.com",
+           projectId: "petstories-374cf",
+           storageBucket: "petstories-374cf.appspot.com",
+           messagingSenderId: "111457987961"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script src="share.js"></script>
+   </body>
+</html>

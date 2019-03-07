@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#F4F6F6;
+}
+nav{
+	width:100%;
+	box-sizing:border-box;
+	height:10vh;
+	background:rgba(0,0,0,0.7);
+
+}
+nav ul #drawerH{
+	position:relative;
+	margin-left:10px;
+	top:2px;
+}
+
+li a:hover{
+	background:rgba(0,0,0,0.6);
+}
+.title{
+	font-size:em;
+}
+ 
+nav ul li{
+	margin-left:6px;
+	/* margin-top:12px; */
+	display:inline-block;
+	list-style:none;
+	
+}
+
+ ul li a,a{
+	text-decoration:none;
+	font-size:1.4em;
+	padding:3px;
+	color:white;
+}
+.pet{
+	color:brown;
+	font-size:1.5em;
+}
+.title{
+	color:white;
+	font-size:1.5em;
+}
+
+form {
+	width:50vw;
+	display:block;
+	box-sizing:border-box;
+	margin:auto auto;
+	margin-top:50px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+}
+input{
+	width:100%;
+	height:6vh;
+	font-size:1em;
+}
+textarea{
+	width:100%;
+	height:20vh;
+	font-size:1em;
+}
+label{
+	/* width:100%; */
+	font-size:2em;
+	margin-left: 20px;
+	
+}
+form button{
+	min-width:70px;
+	height:5vh;
+	color:white;
+	background:rgba(0,0,0,0.8);
+}
+#dialog{
+	display:none;
+	width:50vw;
+	height:230px;
+	margin:50px auto;
+	padding:10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+form button:hover{
+	background:rgba(0,0,0,0.6);
+}
+
+@media(max-width:700px){
+	#dialog, form{
+		width:80%;
+	}
+}

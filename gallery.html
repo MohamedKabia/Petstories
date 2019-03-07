@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>lovely Pets gallery</title>
+      <link rel="stylesheet" type="text/css" href="menue.css">
+      <link rel="stylesheet" type="text/css" href="gallery.css">
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.js"
+         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+         crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div id="container">
+         <nav>
+            <ul>
+               <span id="drawerH">
+                  <a href="#">
+                     <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff"
+                           stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#fff"
+                           stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#fff"
+                           stroke-width="5"/>
+                     </svg>
+                  </a>
+               </span>
+               <li class="title"><span>Lovelly<span class="pet">Pets</span></span></li>
+               <li class="list"><a href="lovelypets.html">HOME</a></li>
+               <li class="list"><a href="#">GALLERY</a></li>
+               <li class="list"><a href="share.html">SHARE  YOUR STORY</a></li>
+            </ul>
+         </nav>
+         <!-- navigation drawer -->
+         <div id="drawer">
+            <ul>
+               <li ><a href="lovelypets.html">HOME</a></li>
+               <li ><a href="#">GALLERY</a></li>
+               <li ><a href="share.html">SHARE  YOUR STORY</a></li>
+            </ul>
+         </div>
+         <div id="centerContainer">
+            <div id="slider">
+               <img src="img/pets.jpg"  alt="">
+               <img src="img/paul.jpg" alt="">
+               <img src="img/leo.jpg" class="active"alt="">
+               <img src="img/birds1.jpeg" alt="">
+               <img src="img/bird2.jpeg" alt="">
+               <img src="img/bunni.jpeg" alt="">
+            </div>
+            <div id="btns">
+               <button id="previous">Previous</button>
+               <button id="sliderbtn">Slide show</button>
+               <button id="next" >wext</button>
+            </div>
+         </div>
+      </div>
+      <script src="gallery.js"></script>
+     
+   </body>
+</html>
